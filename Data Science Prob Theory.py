@@ -305,3 +305,166 @@ exact_6 = binom.pmf(6, n, p)
 
 less_than_6 = binom.cdf(6, n, p)
 
+
+
+
+"""_______T Distribution_________"""
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.stats import t
+from scipy.stats import ttest_1samp
+
+# t-Distribution
+
+# t-distribution is used when:
+# - Sample size is small
+# - Population standard deviation is unknown
+
+# It looks similar to normal distribution
+
+# But tails are wider
+
+# Wider tails mean:
+# More uncertainty in data
+
+
+# Degrees of freedom
+
+# Formula:
+# df = n - 1
+
+# Example:
+# If sample size = 10
+# df = 9
+
+df = 9
+
+# Generate x-axis values
+x = np.linspace(-5, 5, 500)
+
+# Generate t-distribution values
+y = t.pdf(x, df)
+
+# Plot t-distribution graph
+plt.figure(figsize=(10, 5))
+plt.plot(x, y)
+
+plt.title("t-Distribution")
+plt.xlabel("X")
+plt.ylabel("Density")
+
+plt.grid(True)
+plt.show()
+
+
+# Example student marks data
+
+marks = np.array([65, 70, 75, 60, 68, 72, 71, 69, 66, 73])
+
+# Sample mean
+sample_mean = np.mean(marks)
+
+# Assume expected average marks
+population_mean = 70
+
+
+# t-Test
+
+# t-test is used to compare means
+
+# It checks whether
+# observed difference is significant
+
+# Types:
+# - One Sample t-test
+# - Independent t-test
+# - Paired t-test
+
+# Here:
+# One Sample t-test is used
+
+# Null Hypothesis (H0):
+# Sample mean equals population mean
+
+# Alternative Hypothesis (H1):
+# Sample mean is different
+
+
+# Perform t-test
+t_statistic, p_value = ttest_1samp(marks, population_mean)
+
+
+# t-Statistic
+
+# t-statistic measures
+# how far sample mean is
+# from population mean
+
+# Larger absolute t-value means
+# larger difference
+
+
+# p-Value
+
+# p-value tells whether result
+# is statistically significant
+
+# Small p-value means:
+# Strong evidence against null hypothesis
+
+# Common rule:
+# p-value < 0.05
+
+# Then:
+# Reject null hypothesis
+
+# Otherwise:
+# Accept null hypothesis
+
+
+# Example interpretation
+
+# If p-value = 0.02
+# Difference is significant
+
+# If p-value = 0.30
+# Difference is not significant
+
+
+# Display results
+print("Sample Mean :", sample_mean)
+print("t-Statistic :", t_statistic)
+print("p-Value     :", p_value)
+
+
+# Decision making
+
+if p_value < 0.05:
+    print("Reject Null Hypothesis")
+else:
+    print("Accept Null Hypothesis")
+
+
+# Real-time Example
+
+# A school wants to check
+# whether current class average
+# is different from expected average
+
+# Expected average = 70
+
+# t-test helps determine
+# whether difference happened
+# by chance or not
+
+
+# Applications
+
+# Used in:
+# - Data Science
+# - Machine Learning
+# - Medical Research
+# - Finance
+# - Business Analysis
+# - A/B Testing
+# - Quality Testing
