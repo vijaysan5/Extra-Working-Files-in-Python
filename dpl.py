@@ -70,3 +70,35 @@ cv2.imshow("Contours", contour_img)
 
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+
+
+
+import cv2
+import os
+
+# Input video path
+video_path = "input.mp4"
+
+# Output folder for frames
+output_folder = "frames"
+os.makedirs(output_folder, exist_ok=True)
+
+# Open video
+cap = cv2.VideoCapture(video_path)
+
+frame_count = 0
+
+while True:
+    ret, frame = cap.read()
+    
+    if not ret:
+        break  # End of video
+    
+    # Save frame as image
+    frame_filename = os.path.join(output_folder, f"frame_{frame_count:04d}.jpg")
+    cv2.imwrite(frame_filename, frame)
+    
+    frame_count += 1
+
+cap.release()
+print(f"Extracted {frame_count} frames.")
