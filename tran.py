@@ -233,3 +233,107 @@ for i,p in enumerate(result):
         print("Person",i+1," : Income >50K")
     else:
         print("Person",i+1," : Income <=50K")
+
+
+
+
+
+
+
+
+
+
+
+
+# kerat
+
+import pandas as pd
+import numpy as np
+
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import LabelEncoder, StandardScaler
+
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense
+
+# -------------------------------------
+# Load Dataset
+# -------------------------------------
+data = pd.read_csv("day.csv")
+
+# Remove missing values
+data.replace(" ?", np.nan, inplace=True)
+data.dropna(inplace=True)
+
+# -------------------------------------
+# Convert Categorical Columns
+# -------------------------------------
+encoder = LabelEncoder()
+
+for column in data.columns:
+    if data[column].dtype == object:
+        data[column] = encoder.fit_transform(data[column])
+
+# -------------------------------------
+# Features and Target
+# -------------------------------------
+X = data.drop("Numeric-Suffix", axis=1)      # Target column name
+y = data["Numeric-Suffix"]
+
+# -------------------------------------
+# Normalize Features
+# -------------------------------------
+scaler = StandardScaler()
+X = scaler.fit_transform(X)
+
+# -------------------------------------
+# Split Dataset
+# -------------------------------------
+X_train, X_test, y_train, y_test = train_test_split(
+    X,
+    y,
+    test_size=0.2,
+    random_state=42
+)
+
+# -------------------------------------
+# Build Keras Model
+# -------------------------------------
+model = Sequential()
+
+model.add(Dense(64, activation='relu', input_shape=(X_train.shape[1],)))
+model.add(Dense(32, activation='relu'))
+model.add(Dense(16, activation='relu'))
+model.add(Dense(1, activation='sigmoid'))
+
+# -------------------------------------
+# Compile Model
+# -------------------------------------
+model.compile(
+    optimizer='adam',
+    loss='binary_crossentropy',
+    metrics=['accuracy']
+)
+
+# -------------------------------------
+# Train Model
+# -------------------------------------
+history = model.fit(
+    X_train,
+    y_train,
+    epochs=20,
+    batch_size=32,
+    validation_split=0.2
+)
+
+# -------------------------------------
+# Evaluate
+# -------------------------------------
+loss, accuracy = model.evaluate(X_test, y_test)
+
+print("Test Accuracy:", accuracy)
+
+# -------------------------------------
+# Save Model
+# -------------------------------------
+model.save("adult_income_model.keras")
