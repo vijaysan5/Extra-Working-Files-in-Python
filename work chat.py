@@ -11,6 +11,7 @@ from tensorflow.keras.optimizers import SGD
 
 nltk.download('punkt')
 nltk.download('wordnet')
+nltk.download('punkt_tab')
 
 lemmatizer = WordNetLemmatizer()
 
