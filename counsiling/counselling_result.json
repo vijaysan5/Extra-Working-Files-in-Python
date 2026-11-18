@@ -1,0 +1,141 @@
+{
+    "generated_at": "2026-11-16T14:27:39",
+    "student": {
+        "name": "Harish",
+        "class_12_percentage": 70.0,
+        "annual_budget_inr": 120000.0,
+        "interests": [
+            "writing"
+        ],
+        "career_goal": "writter",
+        "preferred_stream": "commerce"
+    },
+    "recommendations": [
+        {
+            "course_id": "BAENG",
+            "course_name": "Bachelor of Arts in English",
+            "stream": "Arts and Humanities",
+            "description": "For students interested in literature, language, writing and communication.",
+            "career_paths": [
+                "Content Writer",
+                "Teacher (with required qualifications)",
+                "Editor",
+                "Communications Associate"
+            ],
+            "typical_subjects": [
+                "Literature",
+                "Linguistics",
+                "Communication",
+                "Critical Writing"
+            ],
+            "minimum_percentage_in_sample_data": 40,
+            "score": 55,
+            "interest_matches": [
+                "writing"
+            ],
+            "meets_sample_marks_cutoff": true,
+            "estimated_annual_fee": 25000,
+            "within_budget": true,
+            "career_match": false
+        },
+        {
+            "course_id": "BCOM",
+            "course_name": "Bachelor of Commerce",
+            "stream": "Commerce",
+            "description": "For students interested in accounting, finance, commerce and business.",
+            "career_paths": [
+                "Accountant",
+                "Financial Analyst",
+                "Banking Associate",
+                "Tax Consultant"
+            ],
+            "typical_subjects": [
+                "Accounting",
+                "Business Law",
+                "Economics",
+                "Taxation"
+            ],
+            "minimum_percentage_in_sample_data": 45,
+            "score": 50,
+            "interest_matches": [],
+            "meets_sample_marks_cutoff": true,
+            "estimated_annual_fee": 35000,
+            "within_budget": true,
+            "career_match": false
+        },
+        {
+            "course_id": "MECH",
+            "course_name": "B.Tech Mechanical Engineering",
+            "stream": "Engineering",
+            "description": "For students interested in machines, product design and manufacturing.",
+            "career_paths": [
+                "Mechanical Engineer",
+                "Design Engineer",
+                "Production Engineer"
+            ],
+            "typical_subjects": [
+                "Engineering Mechanics",
+                "Thermodynamics",
+                "Manufacturing",
+                "Machine Design"
+            ],
+            "minimum_percentage_in_sample_data": 55,
+            "score": 40,
+            "interest_matches": [],
+            "meets_sample_marks_cutoff": true,
+            "estimated_annual_fee": 110000,
+            "within_budget": true,
+            "career_match": false
+        },
+        {
+            "course_id": "BBA",
+            "course_name": "Bachelor of Business Administration",
+            "stream": "Management",
+            "description": "For students interested in management, leadership, marketing and business operations.",
+            "career_paths": [
+                "Business Executive",
+                "Marketing Associate",
+                "HR Associate",
+                "Entrepreneur"
+            ],
+            "typical_subjects": [
+                "Management Principles",
+                "Marketing",
+                "Human Resources",
+                "Business Communication"
+            ],
+            "minimum_percentage_in_sample_data": 45,
+            "score": 40,
+            "interest_matches": [],
+            "meets_sample_marks_cutoff": true,
+            "estimated_annual_fee": 60000,
+            "within_budget": true,
+            "career_match": false
+        },
+        {
+            "course_id": "BSCCS",
+            "course_name": "B.Sc. Computer Science",
+            "stream": "Science",
+            "description": "A science degree focused on computing fundamentals and software skills.",
+            "career_paths": [
+                "Junior Developer",
+                "IT Support Analyst",
+                "Data Analyst"
+            ],
+            "typical_subjects": [
+                "Programming",
+                "Computer Fundamentals",
+                "Mathematics",
+                "Operating Systems"
+            ],
+            "minimum_percentage_in_sample_data": 50,
+            "score": 40,
+            "interest_matches": [],
+            "meets_sample_marks_cutoff": true,
+            "estimated_annual_fee": 45000,
+            "within_budget": true,
+            "career_match": false
+        }
+    ],
+    "disclaimer": "Educational guidance only. Sample cutoffs and fees are illustrative; verify current official admission requirements with each institution."
+}

@@ -1,0 +1,219 @@
+{
+    "project": "College Course Selection Counselling AI",
+    "version": "1.0",
+    "note": "Illustrative sample data only. Actual eligibility, fees, entrance exams, accreditation and seat availability must be verified with each institution.",
+    "courses": [
+        {
+            "id": "CSE",
+            "name": "B.Tech Computer Science and Engineering",
+            "stream": "Engineering",
+            "minimum_percentage": 60,
+            "estimated_annual_fee": 150000,
+            "interests": [
+                "computers",
+                "programming",
+                "technology",
+                "mathematics",
+                "problem solving"
+            ],
+            "career_paths": [
+                "Software Developer",
+                "Data Analyst",
+                "AI Engineer",
+                "Cybersecurity Analyst"
+            ],
+            "description": "For students interested in software, computing, algorithms and technology.",
+            "typical_subjects": [
+                "Programming",
+                "Data Structures",
+                "Computer Networks",
+                "Database Systems"
+            ]
+        },
+        {
+            "id": "ECE",
+            "name": "B.Tech Electronics and Communication Engineering",
+            "stream": "Engineering",
+            "minimum_percentage": 55,
+            "estimated_annual_fee": 130000,
+            "interests": [
+                "electronics",
+                "circuits",
+                "technology",
+                "physics",
+                "communication"
+            ],
+            "career_paths": [
+                "Electronics Engineer",
+                "Embedded Systems Engineer",
+                "Telecom Engineer"
+            ],
+            "description": "For students interested in electronic devices, communication systems and hardware.",
+            "typical_subjects": [
+                "Electronic Circuits",
+                "Signals",
+                "Microprocessors",
+                "Communication Systems"
+            ]
+        },
+        {
+            "id": "MECH",
+            "name": "B.Tech Mechanical Engineering",
+            "stream": "Engineering",
+            "minimum_percentage": 55,
+            "estimated_annual_fee": 110000,
+            "interests": [
+                "machines",
+                "design",
+                "physics",
+                "manufacturing",
+                "automobiles"
+            ],
+            "career_paths": [
+                "Mechanical Engineer",
+                "Design Engineer",
+                "Production Engineer"
+            ],
+            "description": "For students interested in machines, product design and manufacturing.",
+            "typical_subjects": [
+                "Engineering Mechanics",
+                "Thermodynamics",
+                "Manufacturing",
+                "Machine Design"
+            ]
+        },
+        {
+            "id": "BCOM",
+            "name": "Bachelor of Commerce",
+            "stream": "Commerce",
+            "minimum_percentage": 45,
+            "estimated_annual_fee": 35000,
+            "interests": [
+                "business",
+                "accounting",
+                "finance",
+                "economics",
+                "banking"
+            ],
+            "career_paths": [
+                "Accountant",
+                "Financial Analyst",
+                "Banking Associate",
+                "Tax Consultant"
+            ],
+            "description": "For students interested in accounting, finance, commerce and business.",
+            "typical_subjects": [
+                "Accounting",
+                "Business Law",
+                "Economics",
+                "Taxation"
+            ]
+        },
+        {
+            "id": "BBA",
+            "name": "Bachelor of Business Administration",
+            "stream": "Management",
+            "minimum_percentage": 45,
+            "estimated_annual_fee": 60000,
+            "interests": [
+                "business",
+                "management",
+                "leadership",
+                "marketing",
+                "entrepreneurship"
+            ],
+            "career_paths": [
+                "Business Executive",
+                "Marketing Associate",
+                "HR Associate",
+                "Entrepreneur"
+            ],
+            "description": "For students interested in management, leadership, marketing and business operations.",
+            "typical_subjects": [
+                "Management Principles",
+                "Marketing",
+                "Human Resources",
+                "Business Communication"
+            ]
+        },
+        {
+            "id": "BSCCS",
+            "name": "B.Sc. Computer Science",
+            "stream": "Science",
+            "minimum_percentage": 50,
+            "estimated_annual_fee": 45000,
+            "interests": [
+                "computers",
+                "programming",
+                "technology",
+                "mathematics",
+                "data"
+            ],
+            "career_paths": [
+                "Junior Developer",
+                "IT Support Analyst",
+                "Data Analyst"
+            ],
+            "description": "A science degree focused on computing fundamentals and software skills.",
+            "typical_subjects": [
+                "Programming",
+                "Computer Fundamentals",
+                "Mathematics",
+                "Operating Systems"
+            ]
+        },
+        {
+            "id": "NURSING",
+            "name": "B.Sc. Nursing",
+            "stream": "Health Sciences",
+            "minimum_percentage": 50,
+            "estimated_annual_fee": 90000,
+            "interests": [
+                "biology",
+                "healthcare",
+                "helping people",
+                "medicine",
+                "patient care"
+            ],
+            "career_paths": [
+                "Registered Nurse",
+                "Clinical Nurse",
+                "Community Health Nurse"
+            ],
+            "description": "For students interested in patient care and healthcare services.",
+            "typical_subjects": [
+                "Anatomy",
+                "Physiology",
+                "Nutrition",
+                "Nursing Practice"
+            ]
+        },
+        {
+            "id": "BAENG",
+            "name": "Bachelor of Arts in English",
+            "stream": "Arts and Humanities",
+            "minimum_percentage": 40,
+            "estimated_annual_fee": 25000,
+            "interests": [
+                "language",
+                "writing",
+                "literature",
+                "communication",
+                "teaching"
+            ],
+            "career_paths": [
+                "Content Writer",
+                "Teacher (with required qualifications)",
+                "Editor",
+                "Communications Associate"
+            ],
+            "description": "For students interested in literature, language, writing and communication.",
+            "typical_subjects": [
+                "Literature",
+                "Linguistics",
+                "Communication",
+                "Critical Writing"
+            ]
+        }
+    ]
+}
